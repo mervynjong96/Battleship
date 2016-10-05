@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="MyGame.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Windows|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\Ship.cs">
+    <Files>
+      <File FileName="src\Ship.cs" Line="144" Column="3" />
+      <File FileName="src\Player.cs" Line="192" Column="15" />
+      <File FileName="src\SeaGrid.cs" Line="216" Column="53" />
+      <File FileName="src\GameResources.cs" Line="48" Column="32" />
+      <File FileName="src\GameMain.cs" Line="28" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
