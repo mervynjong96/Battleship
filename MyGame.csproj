@@ -87,6 +87,7 @@
     <Compile Include="src\ShipName.cs" />
     <Compile Include="src\Tile.cs" />
     <Compile Include="src\TileView.cs" />
+    <Compile Include="src\HelpController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">
