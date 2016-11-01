@@ -1,12 +1,12 @@
 ﻿<Properties StartupItem="MyGame.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Windows|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\Ship.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\HighScoreController.cs">
     <Files>
-      <File FileName="src\Ship.cs" Line="144" Column="3" />
-      <File FileName="src\Player.cs" Line="192" Column="15" />
-      <File FileName="src\SeaGrid.cs" Line="216" Column="53" />
-      <File FileName="src\GameResources.cs" Line="48" Column="32" />
-      <File FileName="src\GameMain.cs" Line="28" Column="2" />
+      <File FileName="src\DiscoveryController.cs" Line="14" Column="45" />
+      <File FileName="src\GameController.cs" Line="28" Column="6" />
+      <File FileName="src\GameMain.cs" Line="29" Column="1" />
+      <File FileName="src\MenuController.cs" Line="195" Column="111" />
+      <File FileName="src\HighScoreController.cs" Line="207" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

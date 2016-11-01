@@ -103,9 +103,9 @@ internal static class MenuController
 		{
 			int i = 0;
 //INSTANT C# NOTE: The ending condition of VB 'For' loops is tested only on entry to the loop. Instant C# has created a temporary variable in order to use the initial value of _menuStructure(menu).Length for every iteration:
-int tempVar = _menuStructure[menu].Length;
-for (i = 0; i < tempVar; i++)
-{
+			int tempVar = _menuStructure[menu].Length;
+			for (i = 0; i < tempVar; i++)
+			{
 				//IsMouseOver the i'th button of the menu
 				if (IsMouseOverMenu(i, level, xOffset))
 				{
@@ -187,12 +187,12 @@ for (i = 0; i < tempVar; i++)
 
 		int i = 0;
 //INSTANT C# NOTE: The ending condition of VB 'For' loops is tested only on entry to the loop. Instant C# has created a temporary variable in order to use the initial value of _menuStructure(menu).Length for every iteration:
-int tempVar = _menuStructure[menu].Length;
-for (i = 0; i < tempVar; i++)
-{
+		int tempVar = _menuStructure[menu].Length;
+		for (i = 0; i < tempVar; i++)
+		{
 			int btnLeft = MENU_LEFT + BUTTON_SEP * (i + xOffset);
 			//SwinGame.FillRectangle(Color.White, btnLeft, btnTop, BUTTON_WIDTH, BUTTON_HEIGHT)
-			SwinGame.DrawTextLines(_menuStructure[menu][i], MENU_COLOR, Color.Black, GameResources.GameFont("Menu"), FontAlignment.AlignCenter, btnLeft + TEXT_OFFSET, btnTop + TEXT_OFFSET, BUTTON_WIDTH, BUTTON_HEIGHT);
+			SwinGame.DrawTextLines(_menuStructure[menu][i], MENU_COLOR, Color.Transparent, GameResources.GameFont("Menu"), FontAlignment.AlignCenter, btnLeft + TEXT_OFFSET, btnTop + TEXT_OFFSET, BUTTON_WIDTH, BUTTON_HEIGHT);
 
 			if ((SwinGame.MouseDown(MouseButton.LeftButton) & IsMouseOverMenu(i, level, xOffset)))
 			{

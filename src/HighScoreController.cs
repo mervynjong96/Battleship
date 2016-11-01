@@ -165,11 +165,14 @@ internal static class HighScoreController
 	public static void ReadHighScore(int value)
 	{
 		const int ENTRY_TOP = 500;
+		const int SCORE_TOP = 480;
+		const int MESSAGE_TITLE_TOP = 455;
 
 		if (_Scores.Count == 0)
 		{
 			LoadScores();
 		}
+
 
 		//is it a high score
 		if (value > _Scores[_Scores.Count - 1].Value)
@@ -181,15 +184,19 @@ internal static class HighScoreController
 
 			int x = SCORES_LEFT + SwinGame.TextWidth(GameResources.GameFont("Courier"), "Name: ");
 
+			int SCORE_TITLE = x - 95;
+
 			SwinGame.StartReadingText(Color.White, NAME_WIDTH + 1, GameResources.GameFont("Courier"), x, ENTRY_TOP);
 
-			//Read the text from the user
+			//Output user's highscore and read the text from the user
 			while (SwinGame.ReadingText())
 			{
 				SwinGame.ProcessEvents();
 
 				UtilityFunctions.DrawBackground();
 				DrawHighScores();
+				SwinGame.DrawText("Congratulations! You break a new record!", Color.Red, SwinGame.LoadFont("cour.ttf",15), SCORE_TITLE - 15, MESSAGE_TITLE_TOP);
+				SwinGame.DrawText("Your score: " + GameController.HumanPlayer.Shots.ToString(), Color.White, GameResources.GameFont("Courier"), SCORE_TITLE, SCORE_TOP);
 				SwinGame.DrawText("Name: ", Color.White, GameResources.GameFont("Courier"), SCORES_LEFT, ENTRY_TOP);
 				SwinGame.RefreshScreen();
 			}
