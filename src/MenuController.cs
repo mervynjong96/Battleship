@@ -198,6 +198,7 @@ internal static class MenuController
 			if ((SwinGame.MouseDown(MouseButton.LeftButton) & IsMouseOverMenu(i, level, xOffset)))
 			{
 				SwinGame.DrawRectangle(HIGHLIGHT_COLOR, btnLeft, btnTop, BUTTON_WIDTH, BUTTON_HEIGHT);
+				SwinGame.FillRectangle (Color.Gold, btnLeft, btnTop, BUTTON_WIDTH, BUTTON_HEIGHT);
 			}
 		}
 	}
@@ -282,8 +283,9 @@ internal static class MenuController
 	{
 		switch (button)
 		{
-			case SETUP_MENU_EASY_BUTTON:
+		    case SETUP_MENU_EASY_BUTTON:
 				GameController.SetDifficulty(AIOption.Easy);
+			    
 				break;
 			case SETUP_MENU_MEDIUM_BUTTON:
 				GameController.SetDifficulty(AIOption.Medium);

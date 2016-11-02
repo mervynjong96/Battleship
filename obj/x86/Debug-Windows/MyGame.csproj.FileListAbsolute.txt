@@ -51,6 +51,7 @@ C:\Users\4334264\Desktop\Battleship\bin\Debug\MyGame.exe
 C:\Users\4334264\Desktop\Battleship\bin\Debug\SwinGame.dll
 C:\Users\4334264\Desktop\Battleship\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
 C:\Users\4334264\Desktop\Battleship\obj\x86\Debug-Windows\MyGame.exe
+<<<<<<< HEAD
 F:\school_project\dp1\Battleship\bin\Debug\Resources\animations\startup.txt
 F:\school_project\dp1\Battleship\bin\Debug\Resources\bundles\FileDialog.txt
 F:\school_project\dp1\Battleship\bin\Debug\Resources\bundles\splash.txt
@@ -96,3 +97,20 @@ C:\Users\Jason\Battleship\bin\Debug\MyGame.exe
 C:\Users\Jason\Battleship\bin\Debug\SwinGame.dll
 C:\Users\Jason\Battleship\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
 C:\Users\Jason\Battleship\obj\x86\Debug-Windows\MyGame.exe
+=======
+C:\Users\User\Battleship\bin\Debug\Resources\animations\startup.txt
+C:\Users\User\Battleship\bin\Debug\Resources\bundles\FileDialog.txt
+C:\Users\User\Battleship\bin\Debug\Resources\bundles\splash.txt
+C:\Users\User\Battleship\bin\Debug\Resources\fonts\arial.ttf
+C:\Users\User\Battleship\bin\Debug\Resources\fonts\cour.ttf
+C:\Users\User\Battleship\bin\Debug\Resources\fonts\maven_pro_regular.ttf
+C:\Users\User\Battleship\bin\Debug\Resources\panels\FileDialog.txt
+C:\Users\User\Battleship\bin\Debug\Resources\sounds\error.wav
+C:\Users\User\Battleship\bin\Debug\Resources\sounds\SwinGameStart.wav
+C:\Users\User\Battleship\bin\Debug\Resources\SwinGame.icns
+C:\Users\User\Battleship\bin\Debug\Resources\SwinGame.ico
+C:\Users\User\Battleship\bin\Debug\MyGame.exe
+C:\Users\User\Battleship\bin\Debug\SwinGame.dll
+C:\Users\User\Battleship\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
+C:\Users\User\Battleship\obj\x86\Debug-Windows\MyGame.exe
+>>>>>>> display-ai-difficulty-on-corner
