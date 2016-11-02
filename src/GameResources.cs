@@ -55,6 +55,10 @@ public static class GameResources
 	private static void LoadMusic()
 	{
 		NewMusic("Background", "horrordrone.mp3");
+		NewMusic ("MakeSense", "rejuvenate.mp3");
+		NewMusic ("TuneOne", "canonrock.mp3");
+		NewMusic ("TuneTwo", "circulation.mp3");
+		NewMusic ("TuneThree", "russiananthem.mp3");
 	}
 
 	/// <summary>

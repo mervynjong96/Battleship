@@ -114,3 +114,18 @@ C:\Users\User\Battleship\bin\Debug\SwinGame.dll
 C:\Users\User\Battleship\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
 C:\Users\User\Battleship\obj\x86\Debug-Windows\MyGame.exe
 >>>>>>> display-ai-difficulty-on-corner
+C:\Users\Eugene\Desktop\DP1\Battleship\bin\Debug\Resources\animations\startup.txt
+C:\Users\Eugene\Desktop\DP1\Battleship\bin\Debug\Resources\bundles\FileDialog.txt
+C:\Users\Eugene\Desktop\DP1\Battleship\bin\Debug\Resources\bundles\splash.txt
+C:\Users\Eugene\Desktop\DP1\Battleship\bin\Debug\Resources\fonts\arial.ttf
+C:\Users\Eugene\Desktop\DP1\Battleship\bin\Debug\Resources\fonts\cour.ttf
+C:\Users\Eugene\Desktop\DP1\Battleship\bin\Debug\Resources\fonts\maven_pro_regular.ttf
+C:\Users\Eugene\Desktop\DP1\Battleship\bin\Debug\Resources\panels\FileDialog.txt
+C:\Users\Eugene\Desktop\DP1\Battleship\bin\Debug\Resources\sounds\error.wav
+C:\Users\Eugene\Desktop\DP1\Battleship\bin\Debug\Resources\sounds\SwinGameStart.wav
+C:\Users\Eugene\Desktop\DP1\Battleship\bin\Debug\Resources\SwinGame.icns
+C:\Users\Eugene\Desktop\DP1\Battleship\bin\Debug\Resources\SwinGame.ico
+C:\Users\Eugene\Desktop\DP1\Battleship\bin\Debug\MyGame.exe
+C:\Users\Eugene\Desktop\DP1\Battleship\bin\Debug\SwinGame.dll
+C:\Users\Eugene\Desktop\DP1\Battleship\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
+C:\Users\Eugene\Desktop\DP1\Battleship\obj\x86\Debug-Windows\MyGame.exe

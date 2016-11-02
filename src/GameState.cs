@@ -49,6 +49,11 @@ public enum GameState
 	ViewingHelp,
 
 	/// <summary>
+	/// View music
+	/// </summary>
+	ViewingMusic,
+
+	/// <summary>
 	/// The player has quit. Show ending credits and terminate the game
 	/// </summary>
 	Quitting

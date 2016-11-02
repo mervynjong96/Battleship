@@ -18,9 +18,10 @@ internal static class MenuController
 	/// </remarks>
 	private static readonly string[][] _menuStructure =
 	{
-		new string[] {"PLAY", "SETUP", "SCORES","HELP", "QUIT"},
+		new string[] {"PLAY", "SETUP", "SCORES","HELP", "MUSIC", "QUIT"},
 		new string[] {"RETURN", "SURRENDER", "QUIT"},
-		new string[] {"EASY", "MEDIUM", "HARD"}
+		new string[] {"EASY", "MEDIUM", "HARD"},
+		new string[] {"UPBEAT", "ANTHEM", "D MAJOR", "INTERNET", "MUTE"}
 	};
 
 	private const int MENU_TOP = 575;
@@ -35,11 +36,16 @@ internal static class MenuController
 	private const int GAME_MENU = 1;
 	private const int SETUP_MENU = 2;
 
+	private const int MUSIC_MENU = 3;
+
 	private const int MAIN_MENU_PLAY_BUTTON = 0;
 	private const int MAIN_MENU_SETUP_BUTTON = 1;
 	private const int MAIN_MENU_TOP_SCORES_BUTTON = 2;
 	private const int MAIN_MENU_HELP_BUTTON = 3;
-	private const int MAIN_MENU_QUIT_BUTTON = 4;
+
+	private const int MAIN_MENU_MUSIC_MENU_BUTTON = 4;
+
+	private const int MAIN_MENU_QUIT_BUTTON = 5;
 
 	private const int SETUP_MENU_EASY_BUTTON = 0;
 	private const int SETUP_MENU_MEDIUM_BUTTON = 1;
@@ -49,6 +55,12 @@ internal static class MenuController
 	private const int GAME_MENU_RETURN_BUTTON = 0;
 	private const int GAME_MENU_SURRENDER_BUTTON = 1;
 	private const int GAME_MENU_QUIT_BUTTON = 2;
+
+	private const int MUSIC_MENU_BGM1_BUTTON = 0;
+	private const int MUSIC_MENU_BGM2_BUTTON = 1;
+	private const int MUSIC_MENU_BGM3_BUTTON = 2;
+	private const int MUSIC_MENU_BGM4_BUTTON = 3;
+	private const int MUSIC_MENU_MUTE_BUTTON = 4;
 
 	private static readonly Color MENU_COLOR = SwinGame.RGBAColor(2, 167, 252, 255);
 	private static readonly Color HIGHLIGHT_COLOR = SwinGame.RGBAColor(1, 57, 86, 255);
@@ -83,6 +95,17 @@ internal static class MenuController
 	public static void HandleGameMenuInput()
 	{
 		HandleMenuInput(GAME_MENU, 0, 0);
+	}
+
+	/// <summary>
+	/// Handle input in the music menu.
+	/// </summary>
+	public static void HandleMusicInput(){
+		bool handled = HandleMenuInput(MUSIC_MENU, 1, 4);
+		if (!handled)
+		{
+			HandleMenuInput(MAIN_MENU, 0, 0);
+		}
 	}
 
 	/// <summary>
@@ -148,6 +171,13 @@ internal static class MenuController
 	}
 
 	/// <summary>
+	/// Draws the music menu to the screen
+	/// </summary>
+	public static void DrawMusicMenu(){
+		DrawButtons (MUSIC_MENU);
+	}
+
+	/// <summary>
 	/// Draws the settings menu to the screen.
 	/// </summary>
 	/// <remarks>
@@ -160,6 +190,21 @@ internal static class MenuController
 
 		DrawButtons(MAIN_MENU);
 		DrawButtons(SETUP_MENU, 1, 1);
+	}
+
+	/// <summary>
+	/// Draws the music menu to the screen.
+	/// </summary>
+	/// <remarks>
+	/// Also shows the main menu
+	/// </remarks>
+	public static void DrawMusicSettings()
+	{
+		//Clears the Screen to Black
+		//SwinGame.DrawText("Settings", Color.White, GameFont("ArialLarge"), 50, 50)
+
+		DrawButtons(MAIN_MENU);
+		DrawButtons(MUSIC_MENU, 1, 4);
 	}
 
 	/// <summary>
@@ -246,6 +291,9 @@ internal static class MenuController
 			case GAME_MENU:
 				PerformGameMenuAction(button);
 				break;
+		case MUSIC_MENU:
+			PerformMusicMenuAction (button);
+			break;
 		}
 	}
 
@@ -268,6 +316,9 @@ internal static class MenuController
 				break;
 			case MAIN_MENU_HELP_BUTTON:
 				GameController.AddNewState (GameState.ViewingHelp);
+				break;
+			case MAIN_MENU_MUSIC_MENU_BUTTON:
+				GameController.AddNewState (GameState.ViewingMusic);
 				break;
 			case MAIN_MENU_QUIT_BUTTON:
 				GameController.EndCurrentState();
@@ -316,6 +367,42 @@ internal static class MenuController
 			case GAME_MENU_QUIT_BUTTON:
 				GameController.AddNewState(GameState.Quitting);
 				break;
+		}
+	}
+
+	/// <summary>
+	/// The music menu was clicked, perform the button's action.
+	/// </summary>
+	/// <param name="button">the button pressed</param>
+	private static void PerformMusicMenuAction(int button){
+		switch (button)
+		{
+		case MUSIC_MENU_BGM1_BUTTON:
+			SwinGame.FadeMusicOut (500);
+			SwinGame.FadeMusicIn (GameResources.GameMusic ("MakeSense"), 1000);
+			break;
+		case MUSIC_MENU_BGM2_BUTTON:
+			SwinGame.FadeMusicOut(500);
+			SwinGame.FadeMusicIn (GameResources.GameMusic("TuneThree"), 1000);
+			break;
+		case MUSIC_MENU_BGM3_BUTTON:
+			SwinGame.FadeMusicOut(500);
+			SwinGame.FadeMusicIn (GameResources.GameMusic("TuneOne"), 1000);
+			break;
+		case MUSIC_MENU_BGM4_BUTTON:
+			SwinGame.FadeMusicOut(500);
+			SwinGame.FadeMusicIn (GameResources.GameMusic("TuneTwo"), 1000);
+			break;
+		case MUSIC_MENU_MUTE_BUTTON:
+			if (SwinGame.MusicPlaying ())
+			{
+				SwinGame.FadeMusicOut(500);
+			}
+			else
+			{
+				SwinGame.FadeMusicIn(GameResources.GameMusic("Background"), 1000);
+			}
+			break;
 		}
 	}
 }

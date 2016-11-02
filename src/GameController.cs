@@ -335,6 +335,9 @@ public static class GameController
 		case GameState.ViewingHelp:
 			HelpController.HandleHelpScreenInput ();
 			break;
+		case GameState.ViewingMusic:
+			MenuController.HandleMusicInput ();
+			break;
 		}
 
 		UtilityFunctions.UpdateAnimations();
@@ -373,6 +376,9 @@ public static class GameController
 			case GameState.ViewingHighScores:
 				HighScoreController.DrawHighScores();
 				break;
+		case GameState.ViewingMusic:
+			MenuController.DrawMusicSettings ();
+			break;
 		}
 
 		switch (_aiSetting) {
