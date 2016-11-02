@@ -372,6 +372,21 @@ public static class GameController
 				break;
 		}
 
+		switch (_aiSetting) {
+		case AIOption.Easy:
+			SwinGame.DrawText ("Easy Mode", Color.Red, GameResources.GameFont ("Courier"), 700, 20);
+			break;
+		case AIOption.Medium:
+			SwinGame.DrawText ("Medium Mode", Color.Red, GameResources.GameFont ("Courier"), 700, 20);
+			break;
+		case AIOption.Hard:
+			SwinGame.DrawText ("Hard Mode", Color.Red, GameResources.GameFont ("Courier"), 700, 20);
+			break;
+		default:
+			break;
+		}
+
+
 		UtilityFunctions.DrawAnimations();
 
 		SwinGame.RefreshScreen();
