@@ -1,0 +1,14 @@
+C:\Users\Jason\Downloads\Battleship-master (1)\Battleship-master\bin\Debug\Resources\animations\startup.txt
+C:\Users\Jason\Downloads\Battleship-master (1)\Battleship-master\bin\Debug\Resources\bundles\FileDialog.txt
+C:\Users\Jason\Downloads\Battleship-master (1)\Battleship-master\bin\Debug\Resources\bundles\splash.txt
+C:\Users\Jason\Downloads\Battleship-master (1)\Battleship-master\bin\Debug\Resources\fonts\arial.ttf
+C:\Users\Jason\Downloads\Battleship-master (1)\Battleship-master\bin\Debug\Resources\fonts\cour.ttf
+C:\Users\Jason\Downloads\Battleship-master (1)\Battleship-master\bin\Debug\Resources\fonts\maven_pro_regular.ttf
+C:\Users\Jason\Downloads\Battleship-master (1)\Battleship-master\bin\Debug\Resources\panels\FileDialog.txt
+C:\Users\Jason\Downloads\Battleship-master (1)\Battleship-master\bin\Debug\Resources\sounds\error.wav
+C:\Users\Jason\Downloads\Battleship-master (1)\Battleship-master\bin\Debug\Resources\sounds\SwinGameStart.wav
+C:\Users\Jason\Downloads\Battleship-master (1)\Battleship-master\bin\Debug\Resources\SwinGame.icns
+C:\Users\Jason\Downloads\Battleship-master (1)\Battleship-master\bin\Debug\Resources\SwinGame.ico
+C:\Users\Jason\Downloads\Battleship-master (1)\Battleship-master\bin\Debug\MyGame.exe
+C:\Users\Jason\Downloads\Battleship-master (1)\Battleship-master\bin\Debug\SwinGame.dll
+C:\Users\Jason\Downloads\Battleship-master (1)\Battleship-master\obj\x86\Debug-Windows\MyGame.exe
