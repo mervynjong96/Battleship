@@ -404,5 +404,6 @@ internal static class MenuController
 			}
 			break;
 		}
+		GameController.EndCurrentState();
 	}
 }
