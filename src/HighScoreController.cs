@@ -196,7 +196,7 @@ internal static class HighScoreController
 				UtilityFunctions.DrawBackground();
 				DrawHighScores();
 				SwinGame.DrawText("Congratulations! You break a new record!", Color.Red, SwinGame.LoadFont("cour.ttf",15), SCORE_TITLE - 15, MESSAGE_TITLE_TOP);
-				SwinGame.DrawText("Your score: " + GameController.HumanPlayer.Shots.ToString(), Color.White, GameResources.GameFont("Courier"), SCORE_TITLE, SCORE_TOP);
+				SwinGame.DrawText("Your score: " + GameController.HumanPlayer.Score.ToString(), Color.White, GameResources.GameFont("Courier"), SCORE_TITLE, SCORE_TOP);
 				SwinGame.DrawText("Name: ", Color.White, GameResources.GameFont("Courier"), SCORES_LEFT, ENTRY_TOP);
 				SwinGame.RefreshScreen();
 			}
